@@ -11,7 +11,7 @@
 
 Electron 是 GitHub 的開源專案，現在有很多產品都是使用 Electron 製作 Desktop App，例如：VS Code（我正用 VS Code撰寫這份文件）、Spotify、Slack、Twitch、GitHub 自家的 Code Editor - Atom 等，這些有名的 Desktop App 都是 Electron App。還有更多的 Electron App，請參考官網的[列表](https://www.electronjs.org/apps)。
 
-因此，若我們已使用過 web 開發技術開發一些 web app，那嘗試用同樣的 code base 開發 desktop app 也是一個不錯的嘗試。
+因此，若我們已使用過 web 開發技術開發一些 web app，用同樣的 code base 開發 desktop app 也是一個不錯的嘗試。
 
 接下來會用 Electron 搭配 React 來說明如何從零開始打造一個 Electron app 專案
 
