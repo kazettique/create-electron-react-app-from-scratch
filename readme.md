@@ -309,7 +309,7 @@ app.on("activate", () => {
 });
 ```
 
-##### PS.0 若我們不想用 main 這個名字，記得在更改檔名的時候，也要順便到 `package.json` 裡修改 `main` 所指向的檔案名稱，使之同步。
+##### PS. 若我們不想用 main 這個名字，記得在更改檔名的時候，也要順便到 `package.json` 裡修改 `main` 所指向的檔案名稱，使之同步。
 
 ## 加入 webpack 及設定
 
@@ -489,11 +489,10 @@ webpack 有用到 babel，用 `@babel/preset-react` 來編譯 React，但不幸�
 ## 加入 NPM 指令
 
 webpack 設定完成後，我們也來到最後一步了。
-`create-react-app` 在建立專案的時候會自動幫我們生成 script 指令，因此我們手動加上一些我們需要的指令：
+`create-react-app` 在建立專案的時候會自動幫我們生成 script 指令，因此我們手動在根目錄的 `package.json` 裡加上一些 Electron 需要的指令：
 
 ```json
 {
-  // ...
   "scripts": {
     "prod": "webpack --mode production --config webpack.build.config.js && electron --noDevServer .",
     "start": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js --mode development",
@@ -501,7 +500,6 @@ webpack 設定完成後，我們也來到最後一步了。
     "package": "npm run build",
     "postpackage": "electron-packager ./ --out=./builds"
   },
-  // ...
 }
 ```
 
